@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+.card {
+  width: 900px;
+  height: 280px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Left Blue Area */
+.left-section {
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(135deg, #001f5c, #002f86);
+  color: white;
+  padding: 35px 30px;
+  position: relative;
+  clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%);
+}
+
+/* Red Strip */
+.left-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 80px;
+  height: 100%;
+  background: #e60023;
+  transform: skewX(-30deg);
+}
+
+/* Blue Strip */
+.left-section::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  width: 80px;
+  height: 150px;
+  background: #003db8;
+  transform: skewX(-30deg);
+}
+
+.logo {
+  position: relative;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.red-s {
+  color: red;
+}
+
+.white-s {
+  color: white;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+
+h1 {
+  margin-top: 15px;
+  font-size: 45px;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+.line {
+  width: 120px;
+  height: 3px;
+  background: red;
+  margin: 12px 0;
+}
+
+.left-section p {
+  font-size: 24px;
+}
+
+/* Divider */
+.divider {
+  width: 2px;
+  height: 140px;
+  background: linear-gradient(red, blue);
+  margin: auto 20px;
+}
+
+/* Right Side */
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.info {
+  font-size: 20px;
+  margin: 25px 0;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}

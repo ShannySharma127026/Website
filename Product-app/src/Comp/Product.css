@@ -1,0 +1,29 @@
+#p{
+    color: var(--__dChsbGMXsw4B, #2162a1);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+#p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#reduce{
+    color: rgb(234, 46, 46);
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#d{
+    font-size: 11px;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+#main{
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
